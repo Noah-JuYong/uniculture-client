@@ -6,6 +6,11 @@ import SignUp from './pages/Auth/SignUp';
 import SignIn from './pages/Auth/SignIn';
 import './App.css'
 import './styles/fonts.css'
+import { Chat } from './pages/Chat/Chat';
+import Profile from './pages/Profile/Profile';
+import ProfileEdit from './pages/Profile/ProfileEdit';
+import ProfileInfo from './pages/Profile/ProfileInfo';
+import ProfileDelete from './pages/Profile/ProfileDelete';
 
 
 function App() {
@@ -16,6 +21,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sign-up" element={<SignUp />} />
               <Route path="/sign-in" element={<SignIn />} />
+              <Route path='/chatting' element={<Chat />} />
+              <Route path="/profile" element={<Profile />} />
+            <Route path="/accounts/edit" element={<ProfileEdit />} />
+            <Route path="/accounts/personal-info" element={<ProfileInfo />} />
+            <Route path="/accounts/delete" element={<ProfileDelete />} />
           </Routes>
         </BrowserRouter>
       </>
